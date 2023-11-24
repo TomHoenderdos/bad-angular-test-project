@@ -2,3 +2,43 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+// Variables
+@primary-color: #3498db;
+@secondary-color: #2ecc71;
+
+// Mixin
+.rounded-corners(@radius: 5px) {
+  border-radius: @radius;
+}
+
+// Styles
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ecf0f1;
+}
+
+header {
+  background-color: @primary-color;
+  color: #fff;
+  padding: 10px;
+  .rounded-corners();
+}
+
+section {
+  margin: 20px;
+}
+
+.button {
+  background-color: @secondary-color;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  .rounded-corners(3px);
+  
+  &:hover {
+    background-color: darken(@secondary-color, 10%);
+  }
+}
