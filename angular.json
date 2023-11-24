@@ -30,8 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less",
-              "src/style.css"
+              "src/styles.less"
             ],
             "scripts": []
           },
@@ -91,8 +90,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less",
-              "src/style.css"
+              "src/styles.less"
             ],
             "scripts": []
           }
